@@ -1,0 +1,18 @@
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #FAFAFA;
+}
+
+.container {
+text-align: center;
+padding: 32px 0;
+}
+
+.lista-produtos {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+justify-content: center;
+padding-bottom: 80px;
+}

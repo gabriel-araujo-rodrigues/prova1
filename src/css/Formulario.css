@@ -12,3 +12,24 @@ border-radius: 20px;
 padding: 26px 64px;
 box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
 }
+
+.condicao {
+margin: 24px 0;
+display: flex;
+gap: 32px;
+font-size: 20px;
+}
+
+.condicao label {
+display: flex;
+align-items: center;
+gap: 8px;
+cursor: pointer;
+}
+
+.condicao input[type="radio"] {
+width: 18px;
+height: 18px;
+accent-color: #6278f7;
+cursor: pointer;
+}

@@ -1,0 +1,53 @@
+.card-produto {
+background-color: #F2F2F2;
+border-radius: 20px;
+padding: 24px;
+box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+width: 220px;
+}
+
+.marca-circulo {
+width: 64px;
+height: 64px;
+border-radius: 50%;
+background-color: #6278f7;
+color: #FFF;
+font-size: 28px;
+font-weight: 700;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 16px;
+}
+
+.card-produto h3 {
+margin: 0 0 8px 0;
+font-size: 20px;
+}
+
+.card-produto .preco {
+margin: 0 0 12px 0;
+font-size: 18px;
+color: #333;
+}
+
+.condicao-tag {
+padding: 4px 12px;
+border-radius: 999px;
+font-size: 14px;
+font-weight: 700;
+}
+
+.condicao-tag.nova {
+background-color: #95FFD4;
+color: #0a5c3d;
+}
+
+.condicao-tag.usada {
+background-color: #FFD495;
+color: #7a4b00;
+}
