@@ -24,20 +24,26 @@ const Formulario = (props) => {
 
     const [nome, setNome] = useState('');
     const [preco, setPreco] = useState('');
-    const [secao, setSecao] = useState('Selecione a seção');
-    const [marca, setMarca] = useState('Selecione a marca');
+    const [secao, setSecao] = useState('');
+    const [marca, setMarca] = useState('');
     const [condicao, setCondicao] = useState('Nova');
 
     const salvar = (e) => {
         e.preventDefault();
 
+        if (!secao || !marca) {
+            alert('Selecione a seção e a marca do produto.');
+            return;
+        }
+
         const produto = { nome, preco, secao, marca, condicao };
         props.aoSalvar(produto);
 
+        // limpa o formulário depois de inserir
         setNome('');
         setPreco('');
-        setSecao('Selecione a seção');
-        setMarca('Selecione a marca');
+        setSecao('');
+        setMarca('');
         setCondicao('Nova');
     };
 

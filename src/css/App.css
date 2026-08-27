@@ -14,5 +14,18 @@ display: flex;
 flex-wrap: wrap;
 gap: 24px;
 justify-content: center;
-padding-bottom: 80px;
+padding-bottom: 8px;
+}
+
+.secao-loja {
+margin: 32px auto;
+max-width: 80%;
+border-radius: 20px;
+padding: 32px 48px;
+box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.06);
+}
+
+.secao-loja h2 {
+margin-top: 0;
+margin-bottom: 24px;
 }

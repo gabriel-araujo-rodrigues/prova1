@@ -10,18 +10,25 @@ text-align: center;
 width: 220px;
 }
 
-.marca-circulo {
-width: 64px;
-height: 64px;
+.marca-logo-container {
+width: 72px;
+height: 72px;
 border-radius: 50%;
-background-color: #6278f7;
-color: #FFF;
-font-size: 28px;
-font-weight: 700;
+background-color: #FFF;
 display: flex;
 align-items: center;
 justify-content: center;
 margin-bottom: 16px;
+overflow: hidden;
+box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.marca-logo {
+width: 100%;
+height: 100%;
+object-fit: contain;
+padding: 8px;
+box-sizing: border-box;
 }
 
 .card-produto h3 {
@@ -50,4 +57,22 @@ color: #0a5c3d;
 .condicao-tag.usada {
 background-color: #FFD495;
 color: #7a4b00;
+}
+
+.botao-excluir {
+margin-top: 16px;
+background-color: transparent;
+border: 2px solid #e35d5d;
+color: #e35d5d;
+border-radius: 10px;
+font-weight: 700;
+font-size: 14px;
+padding: 8px 16px;
+cursor: pointer;
+transition: background-color 0.2s, color 0.2s;
+}
+
+.botao-excluir:hover {
+background-color: #e35d5d;
+color: #FFF;
 }
